@@ -1,0 +1,15 @@
+name: Run Shell Commands
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Shell Commands
+        run: |
+          echo "Running shell commands..."
+          echo "Hello, World!"
